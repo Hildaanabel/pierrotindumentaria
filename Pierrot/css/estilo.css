@@ -1,0 +1,200 @@
+/*{
+    color:burlywood;
+}
+ al usar el * abarca todo el documento en este caso sera el color de la letra
+*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:"Playfair Display", serif;
+  }
+
+body  {
+    background-color: rgba(247, 243, 235, 1);
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0 ;
+}
+header{
+   position:sticky;
+   top: 0;
+   left: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+/*   flex-wrap: wrap;
+*/
+   background: rgba(255, 255, 255, 1);
+  
+}
+
+
+.titulo{
+   display: flex;
+   align-items: flex-end;
+   gap: 10px;
+}
+
+
+.titulo h1{
+   font-family: "Playfair Display", serif;
+   color: rgba(0, 0, 0, 1);
+   font-size: 2em;
+   margin-left: 30px;
+    
+}
+
+
+
+.navbar a {
+   font-size: 16px;
+   color:rgba(0, 0, 0, 0.938);
+   font-weight: 500;
+   text-decoration: none;
+   margin-left: 35px;
+
+
+}
+
+
+header .navbar {
+    margin-right: 20px;
+  }
+
+footer {
+   background-color: rgb(124, 121, 121);      
+   color: white;                
+   font-size: 16px;
+   font-family: Arial, sans-serif; 
+   text-align: center;           
+   padding: 20px 0;              
+   position: relative;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   
+  }
+
+
+  .contacto {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;           
+   padding: 20px;
+   gap: 20px;
+  }
+
+  .contacto p {
+   flex: 1;                         /* El texto ocupa el 50% del espacio disponible */
+   padding-right: 20px;
+  }
+  .contacto h3 {
+   font-size: 1.8em;
+   margin-bottom: 10px;
+   color: #333;
+}
+
+.contacto p {
+   font-size: 1em;
+   color: #555;
+}
+  .mapa {
+   flex: 1;   
+   max-width: 300px;
+  } 
+
+  .mapa {
+   width: 100%;                    
+   height: 100%;                    
+   border: 0;
+}
+
+p {
+   font-size: 1em;
+   color: #555;
+}                     
+p{
+   color: rgba(0, 0, 0, 1);
+}
+.oferta{
+   color: rgba(165, 42, 42, 1);
+}
+
+
+.productos {
+    display: flex;
+}
+
+/* .caja{
+   display:flex;
+   width: 30%;
+   height: auto;
+   border: 2px solid rgb(221, 183, 151);
+   box-sizing: border-box;
+   }
+
+.caja1{
+   
+   display:flex;
+   width: 30%;
+   height: auto;
+   border: 2px solid rgb(221, 183, 151);
+   box-sizing: border-box;
+   
+
+}
+
+.productos img{
+    width: 100%;
+    height: auto;
+    object-fit:contain;
+    max-height: 200px;
+
+}
+*/
+.productos {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   padding: 20px;
+   gap: 20px;
+}
+
+.producto {
+   border: 1px solid #dddbd4;
+   padding: 10px;
+   border-radius: 6px;
+   text-align: center;
+   background-color: #f7f5f5;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+   transition: transform 0.3s ease;
+}
+
+.producto img {
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 6px;
+}
+
+.producto:hover {
+   transform: translateY(-5px); 
+}
+.producto button:hover {
+   background-color: #555;
+}
+
+.producto button {
+   padding: 10px;
+   background-color: #333;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
